@@ -1,84 +1,86 @@
-<div align=center>
+# AI that uses your codebase as context - Community Fork
 
-# <img src="https://storage.googleapis.com/sourcegraph-assets/cody/20230417/logomark-default.svg" width="26"> Cody
+Sourcegraph’s AI code assistant goes beyond individual dev productivity, helping you achieve consistency and quality at scale with AI. Sourcegraph accelerates the entire workflow for developers by providing them a more natural and intuitive way to work. Searching code, chatting with AI, invoking prompts, and using agents can now all be performed in one place with the best models available.
 
-**AI coding agent with the best codebase understanding**
+## Agentic Chat
 
-Cody is an AI coding agent that uses the latest LLMs and codebase context to help you understand, write, and fix code faster. 
+Designed to simplify and accelerate developer workflows, Sourcegraph uses intent detection and a combination of search, AI chat, and prompts in a single interface to streamline how you explore, understand, and generate code.
 
-[Docs](https://sourcegraph.com/docs/cody) • [cody.dev](https://about.sourcegraph.com/cody?utm_source=github.com&utm_medium=referral)
+<img src="https://storage.googleapis.com/sourcegraph-assets/vscode-marketplace/2025/agentic_chat.png" width="700" alt="Agentic Chat">
 
-[![vscode extension](https://img.shields.io/vscode-marketplace/v/sourcegraph.cody-ai.svg?label=vscode%20ext)](https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai)
-[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![Twitter](https://img.shields.io/twitter/follow/sourcegraph.svg?label=Follow%20%40Sourcegraph&style=social)](https://twitter.com/sourcegraph)
-[![Discord](https://dcbadge.vercel.app/api/server/s2qDtYGnAE?style=flat)](https://discord.gg/s2qDtYGnAE)
+## Prompts
 
-</div>
+Streamline your development process by using prompts to understand, improve, fix, document, and generate unit tests for your code. You can also create your own prompts and save them in the Prompt Library to tailor Sourcegraph to your workflow.
 
-## Get started
+<img src="https://storage.googleapis.com/sourcegraph-assets/vscode-marketplace/2025/cody_prompt_library.png" width="700" alt="Prompts">
 
-[⭐ **Install Cody from the VS Code Marketplace**](https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai) or the [JetBrains Marketplace](https://plugins.jetbrains.com/plugin/9682-cody-ai-by-sourcegraph), then check out the [demo](#demo) to see what you can do.
+## Auto-edit
 
-_&mdash; or &mdash;_
+Autocompletes single lines, or whole functions, in any programming language, configuration file, or documentation. It’s powered by the latest instant LLM models, for accuracy and performance.
 
-- Build and run the VS Code extension locally: `pnpm install && cd vscode && pnpm run dev`
-- See [all supported editors](https://sourcegraph.com/docs/cody/clients)
+<img src="https://storage.googleapis.com/sourcegraph-assets/vscode-marketplace/cody-autocomplete.gif" width="700" alt="Cody autocomplete">
 
-## What is Cody?
+## Works with your favorite IDEs
 
-Cody is an open-source AI coding assistant that helps you understand, write, and fix code faster. It uses advanced search to pull context from both local and remote codebases so that you can use context about APIs, symbols, and usage patterns from across your codebase at any scale, all from within your IDE. Cody works with the newest and best large language models, including the latest Claude Sonnet 4 and GPT-4o.
+Sourcegraph is available on the IDEs you use today. Get AI chat, autocomplete, and inline edit without changing your workflow.
 
-Cody is available for [VS Code](https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai), [JetBrains](https://plugins.jetbrains.com/plugin/9682-cody-ai-by-sourcegraph), and [on the web](https://sourcegraph.com/cody/chat).
+## The best context
 
-See [cody.dev](https://about.sourcegraph.com/cody?utm_source=github.com&utm_medium=referral) for more info.
+When tools focus solely on individual productivity, teams face inconsistent and poor-quality results. Sourcegraph focuses on team productivity using whole codebase context and shared prompts to ensure quality and consistency across your enterprise.
 
-## What can Cody do?
+<img src="https://storage.googleapis.com/sourcegraph-assets/vscode-marketplace/2025/context_providers.png" width="700" alt="context">
 
-- **Chat:** Ask Cody questions about your codebase. Cody will use semantic search to retrieve files from your codebase and use context from those files to answer your questions. You can @-mention files to target specific context, and you can also add remote repositories as context on Cody Enterprise.
-- **Autocomplete:** Cody makes single-line and multi-line suggestions as you type, speeding up your coding and shortcutting the need for you to hunt down function and variable names as you type.
-- **Inline Edit:** Ask Cody to fix or refactor code from anywhere in a file.
-- **Prompts:** Cody has quick, customizable prompts for common actions. Simply highlight a code snippet and run a prompt, like “Document code,” “Explain code,” or “Generate Unit Tests.”
-- **Swappable LLMs:** Support for Anthropic Claude Sonnet 4, OpenAI GPT-4o, Mixtral, Gemini 1.5, and more.
-  - **Free LLM usage included** Cody Free gives you access to Anthropic Claude Sonnet 4 and other models. It's available for individual devs on both personal and work code, subject to reasonable per-user rate limits ([more info](#usage)).
+## The best models
 
-## Demo
+Sourcegraph users can select the LLM they want to use for chat and experiment to choose the best model for the job. Choose from multiple options including Claude Sonnet 4, Gemini 1.5 Pro, and Mixtral 8x7B. Cody Pro users can also select Claude 3 Opus and GPT-4o. [See the full list of model options here](https://sourcegraph.com/docs/cody/capabilities/supported-models).
 
-Cody comes with a variety of AI-for-coding features, such as autocomplete, chat, Smart Apply, generating unit tests, and more.
+<img src="https://storage.googleapis.com/sourcegraph-assets/vscode-marketplace/2025/llm-choices-2025.png" width="700" alt="LLM Choices">
 
-Here's an example of how you can combine some of these features to use Cody to work on a large codebase.
+## Chat
 
-https://www.loom.com/share/ae710891c9044069a9017ee98ce657c5
+Answer questions about your entire codebase, specific files and symbols, or general programming topics.
 
-## Contributing
+For example, you can ask Cody:
 
-All code in this repository is open source (Apache 2).
+- "How is our app's secret storage implemented on Linux?"
+- "Where is the CI config for the web integration tests?"
+- "Write a new GraphQL resolver for the AuditLog"
+- "Why is the UserConnectionResolver giving an "unknown user" error, and how do I fix it?"
+- "Add helpful debug log statements"
+- "Make this work" _(seriously, it often works—try it!)_
 
-Quickstart: `pnpm install && pnpm build && cd vscode && pnpm run dev` to run a local build of the Cody VS Code extension.
+<img src="https://storage.googleapis.com/sourcegraph-assets/vscode-marketplace/cody-chat.gif" width="700" alt="Cody Chat">
 
-See [development docs](doc/dev/index.md) for more.
+## Prompt Library
 
-### Feedback
+You can also create your own prompts and save them in the [Prompt Library](https://sourcegraph.com/docs/cody/capabilities/commands#prompt-library) to tailor Cody to your workflow.
 
-Cody is often magical and sometimes frustratingly wrong. Cody's goal is to be powerful _and_ accurate. You can help:
+## Choose Your LLM
 
-- Use the <kbd>👍</kbd>/<kbd>👎</kbd> buttons in the chat sidebar to give feedback.
-- [File an issue](https://github.com/sourcegraph/cody/issues) (or submit a PR!) when you see problems.
-- [Community forum](https://community.sourcegraph.com/)
-- [Discord](https://discord.gg/s2qDtYGnAE)
+Cody users can select the LLM they want to use for chat and experiment to choose the best model for the job. Choose from multiple options including Claude Sonnet 4, Gemini 1.5 Pro, and Mixtral 8x7B. Cody Pro users can also select Claude 3 Opus and GPT-4o. [See the full list of model options here](https://sourcegraph.com/docs/cody/capabilities/supported-models).
+
+Administrators for Sourcegraph Enterprise instances can configure which model options to let team members choose from.
+
+## Engineered for the enterprise
+
+Sourcegraph is built to support the needs of the largest enterprises, with flexible deployment and support for enterprise security and compliance.
 
 ## Usage
 
-### Individual usage
+This extension works for the Cody Enterprise plan.
 
-Individual usage of Cody currently requires a (free) [Sourcegraph.com](https://sourcegraph.com/?utm_source=github.com&utm_medium=referral) account because we need to prevent abuse of the free Anthropic/OpenAI LLM usage. We're working on supporting [more swappable LLM options](https://sourcegraph.com/docs/cody/faq#can-i-use-my-own-api-keys) (including using your own Anthropic/OpenAI account or a self-hosted LLM) to make it possible to use Cody without any required third-party dependencies.
+You can find detailed information about Cody's available plans [on our website](https://sourcegraph.com/pricing?utm_source=marketplace.visualstudio.com&utm_medium=referral).
 
-### Codying at work
+## Programming Languages
 
-You can use Cody Free or Cody Pro when Codying on your work code. If that doesn't meet your needs (because you need a dedicated/single-tenant instance, audit logs, bring-your-own-model etc.), upgrade to [Cody Enterprise](https://sourcegraph.com/pricing).
+Cody works for any programming language because it uses LLMs trained on broad data. Cody works great with Python, Go, JavaScript, and TypeScript code.
 
-### Existing Sourcegraph customers
+## Feedback
 
-The Cody editor extensions work with:
+- [File an issue](https://github.com/sourcegraph/cody/issues/new/choose)
+- [Discord](https://discord.gg/s2qDtYGnAE)
+- [Twitter (@sourcegraph)](https://twitter.com/sourcegraph)
 
-- Sourcegraph Cloud
-- Sourcegraph Enterprise Server (self-hosted) instances on version 5.1 or later
+## More Information
+
+See [https://cody.dev/](https://about.sourcegraph.com/cody?utm_source=marketplace.visualstudio.com&utm_medium=referral) for demos, information and more.
